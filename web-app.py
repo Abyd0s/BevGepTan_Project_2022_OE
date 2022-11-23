@@ -30,7 +30,6 @@ def user_input_features():
     Length = st.sidebar.slider('Length (sec)', 93, 11, 1412)
     Acousticness = st.sidebar.slider('Acousticness', 0, 99, 50)
     Speechiness = st.sidebar.slider('Speechiness', 2, 55, 30)
-    Popularity = st.sidebar.slider('Popularity', 11, 100, 45)
     Year = st.sidebar.slider('Year', 1956, 2019, 1985)
     data = {'BPM': BPM,
             'Energy': Energy,
@@ -41,7 +40,6 @@ def user_input_features():
             'Length': Length,
             'Acousticness': Acousticness,
             'Speechiness': Speechiness,
-            'Popularity': Popularity,
             'Year': Year,
             }
     features = pd.DataFrame(data, index=[0])
