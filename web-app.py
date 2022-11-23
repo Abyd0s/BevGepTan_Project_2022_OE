@@ -66,4 +66,4 @@ prediction = model_final_pipe.predict(df)
 
 st.subheader('Predicted Song Popularity')
 prediction = int(np.round(prediction, 0))
-st.write(prediction)
+st.title(prediction)
