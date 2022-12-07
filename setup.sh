@@ -1,3 +1,5 @@
+# Default streamlit config
+
 mkdir -p ~/.streamlit/
 
 echo "\
